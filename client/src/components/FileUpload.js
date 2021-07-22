@@ -82,7 +82,7 @@ const FileUpload = () => {
         }catch (err){
             
             if(err.response.status === 500){
-                setMessage( 'There was a problem with the server!!')
+                setMessage( 'There was a problem with the server!!  ')
             }else{
                 setMessage(err.response.data.msg);
             }
