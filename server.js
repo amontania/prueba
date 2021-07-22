@@ -88,7 +88,7 @@ app.get("/pdf", (req, res) => {
         var file = fs.createReadStream(`${__dirname}/client/public/upload/${req.query.file}`);
         file.pipe(res);
    
-     });
+ });
    
 
       
@@ -98,4 +98,4 @@ app.get("/pdf", (req, res) => {
   
 
 
-app.listen(5000,()=> console.log("Server Started..."));
+app.listen(5000,()=> console.log("Server Started on port 5000..."));
